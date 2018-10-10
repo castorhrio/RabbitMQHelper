@@ -36,13 +36,13 @@ namespace RabbitMQHelper
             return connectionFactory.CreateConnection();
         }
 
-        public static IConnection CreateConnectionPool()
-        {
-            ConnectionPoolSemaphore.WaitOne();
+        //public static IConnection CreateConnectionPool()
+        //{
+        //    ConnectionPoolSemaphore.WaitOne();
 
-            IConnection conn = null;
+        //    IConnection conn = null;
 
-        }
+        //}
 
         /// <summary>
         /// 声明交换机
